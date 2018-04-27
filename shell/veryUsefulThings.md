@@ -66,5 +66,5 @@ use post/multi/manage/shell_to_meterpreter
 ## Resources
 
 - [Pentest Monkey](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
-- [xl7edv](http://blog.safebuff.com/2016/06/19/Reverse-shell-Cheat-Sheet/)
+- [xl7dev](http://blog.safebuff.com/2016/06/19/Reverse-shell-Cheat-Sheet/)
 
