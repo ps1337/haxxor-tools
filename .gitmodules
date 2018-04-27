@@ -1,0 +1,18 @@
+[submodule "web/shells/php-reverse-shell"]
+	path = web/shells/php-reverse-shell
+	url = https://github.com/pentestmonkey/php-reverse-shell.git
+[submodule "post/privesc/linux/windows-privesc-check"]
+	path = post/privesc/linux/windows-privesc-check
+	url = https://github.com/pentestmonkey/windows-privesc-check.git
+[submodule "post/privesc/linux/unix-privesc-check"]
+	path = post/privesc/linux/unix-privesc-check
+	url = https://github.com/pentestmonkey/unix-privesc-check.git
+[submodule "post/privesc/kernel-exploits/repos/kernel-exploits"]
+	path = post/privesc/kernel-exploits/repos/kernel-exploits
+	url = https://github.com/lucyoa/kernel-exploits.git
+[submodule "post/privesc/kernel-exploits/repos/linux-kernel-exploits"]
+	path = post/privesc/kernel-exploits/repos/linux-kernel-exploits
+	url = https://github.com/SecWiki/linux-kernel-exploits.git
+[submodule "web/shells/repos/WebShell"]
+	path = web/shells/repos/WebShell
+	url = https://github.com/xl7dev/WebShell.git
