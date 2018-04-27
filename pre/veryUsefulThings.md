@@ -2,4 +2,4 @@
 
 ## Resources
 
-(HighOn.Coffee Nmap Cheatsheet)[https://highon.coffee/blog/nmap-cheat-sheet/]
+[HighOn.Coffee Nmap Cheatsheet](https://highon.coffee/blog/nmap-cheat-sheet/)
