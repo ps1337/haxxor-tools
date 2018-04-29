@@ -16,3 +16,9 @@
 [submodule "web/shells/repos/WebShell"]
 	path = web/shells/repos/WebShell
 	url = https://github.com/xl7dev/WebShell.git
+[submodule "post/privesc/LinEnum"]
+	path = post/privesc/LinEnum
+	url = https://github.com/rebootuser/LinEnum.git
+[submodule "encoding/Decodify"]
+	path = encoding/Decodify
+	url = https://github.com/UltimateHackers/Decodify.git
