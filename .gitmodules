@@ -22,3 +22,6 @@
 [submodule "encoding/Decodify"]
 	path = encoding/Decodify
 	url = https://github.com/UltimateHackers/Decodify.git
+[submodule "web/command_injection/commix"]
+	path = web/command_injection/commix
+	url = https://github.com/commixproject/commix.git

