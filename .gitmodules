@@ -25,3 +25,6 @@
 [submodule "web/command_injection/commix"]
 	path = web/command_injection/commix
 	url = https://github.com/commixproject/commix.git
+[submodule "credentials/Default-Credentials"]
+	path = credentials/Default-Credentials
+	url = https://github.com/netbiosX/Default-Credentials.git
