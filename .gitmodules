@@ -28,3 +28,6 @@
 [submodule "post/privesc/scanner/linux/sh/LinEnum"]
 	path = post/privesc/scanner/linux/sh/LinEnum
 	url = https://github.com/rebootuser/LinEnum.git
+[submodule "encoding/vncpasswd.py"]
+	path = encoding/vncpasswd.py
+	url = https://github.com/trinitronx/vncpasswd.py.git
