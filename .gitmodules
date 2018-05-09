@@ -31,3 +31,9 @@
 [submodule "encoding/vncpasswd.py"]
 	path = encoding/vncpasswd.py
 	url = https://github.com/trinitronx/vncpasswd.py.git
+[submodule "static_binaries/repo/static-binaries"]
+	path = static_binaries/repo/static-binaries
+	url = https://github.com/andrew-d/static-binaries.git
+[submodule "post/backdoor/tsh"]
+	path = post/backdoor/tsh
+	url = https://github.com/creaktive/tsh
