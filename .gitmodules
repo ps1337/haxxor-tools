@@ -37,3 +37,6 @@
 [submodule "post/backdoor/tsh"]
 	path = post/backdoor/tsh
 	url = https://github.com/creaktive/tsh
+[submodule "shell/ShellPop"]
+	path = shell/ShellPop
+	url = https://github.com/0x00-0x00/ShellPop.git
