@@ -13,9 +13,6 @@
 [submodule "post/privesc/kernel-exploits/repos/linux-kernel-exploits"]
 	path = post/privesc/kernel-exploits/repos/linux-kernel-exploits
 	url = https://github.com/SecWiki/linux-kernel-exploits.git
-[submodule "web/shells/repos/WebShell"]
-	path = web/shells/repos/WebShell
-	url = https://github.com/xl7dev/WebShell.git
 [submodule "encoding/Decodify"]
 	path = encoding/Decodify
 	url = https://github.com/UltimateHackers/Decodify.git
