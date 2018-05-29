@@ -40,3 +40,6 @@
 [submodule "shell/ShellPop"]
 	path = shell/ShellPop
 	url = https://github.com/0x00-0x00/ShellPop.git
+[submodule "web/PayloadsAllTheThings"]
+	path = web/PayloadsAllTheThings
+	url = https://github.com/swisskyrepo/PayloadsAllTheThings.git
