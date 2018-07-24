@@ -1,6 +1,6 @@
-# 1337 Infos 4 Hax
+# Haxxor-Tools
 
-Pentesting resources and cheatsheets.
+My personal collection of pentesting resources and cheatsheets.
 
 Resources for sub sections are included in the specific `.md` file.
 
