@@ -40,3 +40,6 @@
 [submodule "web/PayloadsAllTheThings"]
 	path = web/PayloadsAllTheThings
 	url = https://github.com/swisskyrepo/PayloadsAllTheThings.git
+[submodule "BufferOverflow/resources/mona"]
+	path = BufferOverflow/resources/mona
+	url = https://github.com/corelan/mona.git
