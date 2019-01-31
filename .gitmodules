@@ -52,3 +52,6 @@
 [submodule "docker/kali-docker"]
 	path = docker/kali-docker
 	url = https://github.com/ps1337/kali-docker.git
+[submodule "post/privesc/gtfobins-SUID-sudo"]
+	path = post/privesc/gtfobins-SUID-sudo
+	url = https://github.com/GTFOBins/GTFOBins.github.io
