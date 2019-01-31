@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# Allows a file to uploaded line by line using echo commands
+# Upload a file line by line using echo commands
 # Usage: python3 upload0r.py [file]
 # author: pschmied
 
