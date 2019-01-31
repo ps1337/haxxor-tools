@@ -59,5 +59,5 @@
 	path = post/privesc/gtfobins-SUID-sudo
 	url = https://github.com/GTFOBins/GTFOBins.github.io
 [submodule "post/privesc/scanner/windows-privesc-check"]
-	path = post/privesc/scanner/windows-privesc-check
+	path = post/privesc/scanner/windows/windows-privesc-check
 	url = https://github.com/pentestmonkey/windows-privesc-check.git
