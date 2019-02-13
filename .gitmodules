@@ -61,3 +61,6 @@
 [submodule "post/privesc/scanner/windows-privesc-check"]
 	path = post/privesc/scanner/windows/windows-privesc-check
 	url = https://github.com/pentestmonkey/windows-privesc-check.git
+[submodule "BufferOverflow/resources/pattern_tools"]
+	path = BufferOverflow/resources/pattern_tools
+	url = https://github.com/jbertman/pattern_tools.git
