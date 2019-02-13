@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# Upload a file line by line using echo commands
+# Upload a whole file using echo commands
+# File can be a binary
 # Usage: python3 upload0r.py [file]
 # author: pschmied
 
@@ -18,4 +19,5 @@ rnd = ''.join(
 
 with open(filename, "rb") as f:
     encoded = base64.b64encode(f.read()).decode()
-print("echo '%s' | base64 -d >> /tmp/yolofile_%s" % (encoded, rnd))
+print("echo '%s' | base64 -d >> /tmp/yolofile_%s && \\" % (encoded, rnd))
+print("chmod +x /tmp/yolofile_%s" % (rnd))
