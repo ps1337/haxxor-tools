@@ -64,9 +64,39 @@
 [submodule "BufferOverflow/resources/pattern_tools"]
 	path = BufferOverflow/resources/pattern_tools
 	url = https://github.com/jbertman/pattern_tools.git
-[submodule "windows_specific/PowerSploit"]
-	path = windows_specific/PowerSploit
+[submodule "helpers/impacket"]
+	path = helpers/impacket
+	url = https://github.com/SecureAuthCorp/impacket.git
+[submodule "post/ActiveDirectory_AD/BloodHound"]
+	path = post/ActiveDirectory_AD/BloodHound
+	url = https://github.com/BloodHoundAD/BloodHound.git
+[submodule "post/framework/Empire"]
+	path = post/framework/Empire
+	url = https://github.com/EmpireProject/Empire.git
+[submodule "post/framework/nishang"]
+	path = post/framework/nishang
+	url = https://github.com/samratashok/nishang
+[submodule "post/privesc/juicy-potato"]
+	path = post/privesc/windows/juicy-potato_privesc/juicy-potato
+	url = https://github.com/ohpe/juicy-potato.git
+[submodule "post/privesc/windows/RottenPotatoNG"]
+	path = post/privesc/windows/RottenPotatoNG
+	url = https://github.com/breenmachine/RottenPotatoNG.git
+[submodule "post/privesc/windows/Sherlock"]
+	path = post/privesc/windows/Sherlock
+	url = https://github.com/rasta-mouse/Sherlock.git
+[submodule "post/privesc/windows/Watson"]
+	path = post/privesc/windows/Watson
+	url = https://github.com/rasta-mouse/Watson.git
+[submodule "post/privesc/windows/lonelypotato"]
+	path = post/privesc/windows/lonelypotato
+	url = https://github.com/decoder-it/lonelypotato.git
+[submodule "post/privesc/windows/PowerSploit"]
+	path = post/privesc/windows/PowerSploit
 	url = https://github.com/PowerShellMafia/PowerSploit.git
+[submodule "post/framework/merlin"]
+	path = post/framework/merlin
+	url = https://github.com/Ne0nd0g/merlin.git
 [submodule "post/privesc/linux/linux-exploit-suggester-2"]
 	path = post/privesc/linux/linux-exploit-suggester-2
 	url = https://github.com/jondonas/linux-exploit-suggester-2
