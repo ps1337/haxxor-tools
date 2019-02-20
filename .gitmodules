@@ -64,3 +64,6 @@
 [submodule "BufferOverflow/resources/pattern_tools"]
 	path = BufferOverflow/resources/pattern_tools
 	url = https://github.com/jbertman/pattern_tools.git
+[submodule "post/framework/merlin"]
+	path = post/framework/merlin
+	url = https://github.com/Ne0nd0g/merlin.git
