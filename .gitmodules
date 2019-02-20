@@ -67,3 +67,6 @@
 [submodule "windows_specific/PowerSploit"]
 	path = windows_specific/PowerSploit
 	url = https://github.com/PowerShellMafia/PowerSploit.git
+[submodule "post/privesc/linux/linux-exploit-suggester-2"]
+	path = post/privesc/linux/linux-exploit-suggester-2
+	url = https://github.com/jondonas/linux-exploit-suggester-2
