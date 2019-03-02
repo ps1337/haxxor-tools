@@ -100,3 +100,6 @@
 [submodule "post/privesc/linux/linux-exploit-suggester-2"]
 	path = post/privesc/linux/linux-exploit-suggester-2
 	url = https://github.com/jondonas/linux-exploit-suggester-2
+[submodule "helpers/Responder-fixed"]
+	path = helpers/Responder-fixed
+	url = https://github.com/lgandx/Responder.git
