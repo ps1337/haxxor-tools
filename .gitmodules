@@ -100,3 +100,6 @@
 [submodule "post/privesc/scanner/windows/wesng"]
 	path = post/privesc/scanner/windows/wesng
 	url = https://github.com/bitsadmin/wesng.git
+[submodule "post/privesc/scanner/windows/Seatbelt"]
+	path = post/privesc/scanner/windows/Seatbelt
+	url = https://github.com/GhostPack/Seatbelt.git
