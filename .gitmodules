@@ -103,3 +103,6 @@
 [submodule "post/privesc/scanner/windows/Seatbelt"]
 	path = post/privesc/scanner/windows/Seatbelt
 	url = https://github.com/GhostPack/Seatbelt.git
+[submodule "post/database/lib_mysqludf_sys"]
+	path = post/database/lib_mysqludf_sys
+	url = https://github.com/mysqludf/lib_mysqludf_sys.git
