@@ -1,0 +1,135 @@
+[submodule "web/shells/php-reverse-shell"]
+	path = web/shells/php-reverse-shell
+	url = https://github.com/pentestmonkey/php-reverse-shell.git
+[submodule "post/privesc/linux/windows-privesc-check"]
+	path = post/privesc/linux/windows-privesc-check
+	url = https://github.com/pentestmonkey/windows-privesc-check.git
+[submodule "post/privesc/linux/unix-privesc-check"]
+	path = post/privesc/linux/unix-privesc-check
+	url = https://github.com/pentestmonkey/unix-privesc-check.git
+[submodule "post/privesc/kernel-exploits/repos/linux-kernel-exploits"]
+	path = post/privesc/linux/linux-kernel-exploits
+	url = https://github.com/SecWiki/linux-kernel-exploits.git
+[submodule "encoding/Decodify"]
+	path = encoding/Decodify
+	url = https://github.com/UltimateHackers/Decodify.git
+[submodule "web/command_injection/commix"]
+	path = web/command_injection/commix
+	url = https://github.com/commixproject/commix.git
+[submodule "credentials/Default-Credentials"]
+	path = credentials/Default-Credentials
+	url = https://github.com/netbiosX/Default-Credentials.git
+[submodule "post/privesc/scanner/linux/sh/LinEnum"]
+	path = post/privesc/scanner/linux/sh/LinEnum
+	url = https://github.com/rebootuser/LinEnum.git
+[submodule "encoding/vncpasswd.py"]
+	path = encoding/vncpasswd.py
+	url = https://github.com/trinitronx/vncpasswd.py.git
+[submodule "static_binaries/repo/static-binaries"]
+	path = static_binaries/repo/static-binaries
+	url = https://github.com/andrew-d/static-binaries.git
+[submodule "post/backdoor/tsh"]
+	path = post/backdoor/tsh
+	url = https://github.com/creaktive/tsh
+[submodule "shell/ShellPop"]
+	path = shell/ShellPop
+	url = https://github.com/0x00-0x00/ShellPop.git
+[submodule "web/PayloadsAllTheThings"]
+	path = web/PayloadsAllTheThings
+	url = https://github.com/swisskyrepo/PayloadsAllTheThings.git
+[submodule "BufferOverflow/resources/mona"]
+	path = BufferOverflow/resources/mona
+	url = https://github.com/corelan/mona.git
+[submodule "post/privesc/scanner/linux/py/linuxprivchecker"]
+	path = post/privesc/scanner/linux/py/linuxprivchecker
+	url = https://github.com/sleventyeleven/linuxprivchecker
+[submodule "post/privesc/scanner/linux/sh/unix-privesc-check"]
+	path = post/privesc/scanner/linux/sh/unix-privesc-check
+	url = https://github.com/pentestmonkey/unix-privesc-check.git
+[submodule "post/privesc/scanner/windows/windows-privesc-check"]
+	path = post/privesc/scanner/windows/windows-privesc-check
+	url = https://github.com/pentestmonkey/windows-privesc-check
+[submodule "docker/kali-docker"]
+	path = docker/kali-docker
+	url = https://github.com/ps1337/kali-docker.git
+[submodule "BufferOverflow/resources/pattern_tools"]
+	path = BufferOverflow/resources/pattern_tools
+	url = https://github.com/jbertman/pattern_tools.git
+[submodule "helpers/impacket"]
+	path = helpers/impacket
+	url = https://github.com/SecureAuthCorp/impacket.git
+[submodule "post/ActiveDirectory_AD/BloodHound"]
+	path = post/ActiveDirectory_AD/BloodHound
+	url = https://github.com/BloodHoundAD/BloodHound.git
+[submodule "post/framework/Empire"]
+	path = post/framework/Empire
+	url = https://github.com/EmpireProject/Empire.git
+[submodule "post/framework/nishang"]
+	path = post/framework/nishang
+	url = https://github.com/samratashok/nishang
+[submodule "post/privesc/juicy-potato"]
+	path = post/privesc/windows/juicy-potato_privesc/juicy-potato
+	url = https://github.com/ohpe/juicy-potato.git
+[submodule "post/privesc/windows/RottenPotatoNG"]
+	path = post/privesc/windows/RottenPotatoNG
+	url = https://github.com/breenmachine/RottenPotatoNG.git
+[submodule "post/privesc/windows/Sherlock"]
+	path = post/privesc/scanner/windows/Sherlock
+	url = https://github.com/rasta-mouse/Sherlock.git
+[submodule "post/privesc/windows/Watson"]
+	path = post/privesc/scanner/windows/Watson
+	url = https://github.com/rasta-mouse/Watson.git
+[submodule "post/privesc/windows/lonelypotato"]
+	path = post/privesc/windows/lonelypotato
+	url = https://github.com/decoder-it/lonelypotato.git
+[submodule "post/privesc/windows/PowerSploit"]
+	path = post/privesc/windows/PowerSploit
+	url = https://github.com/PowerShellMafia/PowerSploit.git
+[submodule "post/framework/merlin"]
+	path = post/framework/merlin
+	url = https://github.com/Ne0nd0g/merlin.git
+[submodule "post/privesc/linux/linux-exploit-suggester-2"]
+	path = post/privesc/linux/linux-exploit-suggester-2
+	url = https://github.com/jondonas/linux-exploit-suggester-2
+[submodule "helpers/Responder-fixed"]
+	path = helpers/Responder-fixed
+	url = https://github.com/lgandx/Responder.git
+[submodule "post/privesc/scanner/windows/JAWS"]
+	path = post/privesc/scanner/windows/JAWS
+	url = https://github.com/411Hall/JAWS.git
+[submodule "post/privesc/scanner/windows/wesng"]
+	path = post/privesc/scanner/windows/wesng
+	url = https://github.com/bitsadmin/wesng.git
+[submodule "post/privesc/scanner/windows/Seatbelt"]
+	path = post/privesc/scanner/windows/Seatbelt
+	url = https://github.com/GhostPack/Seatbelt.git
+<<<<<<< HEAD
+[submodule "post/database/lib_mysqludf_sys"]
+	path = post/database/lib_mysqludf_sys
+	url = https://github.com/mysqludf/lib_mysqludf_sys.git
+=======
+[submodule "post/privesc/scanner/windows/Windows-Exploit-Suggester"]
+	path = post/privesc/scanner/windows/Windows-Exploit-Suggester
+	url = https://github.com/GDSSecurity/Windows-Exploit-Suggester.git
+[submodule "post/privesc/windows/Tater"]
+	path = post/privesc/windows/Tater
+	url = https://github.com/Kevin-Robertson/Tater.git
+[submodule "post/privesc/linux/linux-exploit-suggester"]
+	path = post/privesc/linux/linux-exploit-suggester
+	url = https://github.com/mzet-/linux-exploit-suggester.git
+[submodule "post/privesc/linux/linuxprivchecker"]
+	path = post/privesc/linux/linuxprivchecker
+	url = https://github.com/sleventyeleven/linuxprivchecker.git
+[submodule "post/privesc/repos/Privilege-Escalation"]
+	path = post/privesc/repos/Privilege-Escalation
+	url = https://github.com/AusJock/Privilege-Escalation.git
+[submodule "misc_exploits/AutoBlue-MS17-010"]
+	path = misc_exploits/AutoBlue-MS17-010
+	url = https://github.com/3ndG4me/AutoBlue-MS17-010.git
+[submodule "misc_exploits/MS17-010"]
+	path = misc_exploits/MS17-010
+	url = https://github.com/worawit/MS17-010.git
+[submodule "post/privesc/windows/WindowsExploits"]
+	path = post/privesc/windows/WindowsExploits
+	url = https://github.com/abatchy17/WindowsExploits.git
+>>>>>>> 30e046c5c8d063c98ccd571a2b7909368e952fc8

@@ -1,0 +1,1 @@
+- [Basic SQLi, also MSSQL](https://searchsqlserver.techtarget.com/feature/SQL-injection)
