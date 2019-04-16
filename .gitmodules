@@ -89,7 +89,7 @@
 	path = post/framework/merlin
 	url = https://github.com/Ne0nd0g/merlin.git
 [submodule "post/privesc/linux/linux-exploit-suggester-2"]
-	path = post/privesc/linux/linux-exploit-suggester-2
+	path = post/privesc/scanner/linux/pl/linux-exploit-suggester-2
 	url = https://github.com/jondonas/linux-exploit-suggester-2
 [submodule "helpers/Responder-fixed"]
 	path = helpers/Responder-fixed
@@ -110,7 +110,7 @@
 	path = post/privesc/windows/Tater
 	url = https://github.com/Kevin-Robertson/Tater.git
 [submodule "post/privesc/linux/linux-exploit-suggester"]
-	path = post/privesc/linux/linux-exploit-suggester
+	path = post/privesc/scanner/linux/sh/linux-exploit-suggester
 	url = https://github.com/mzet-/linux-exploit-suggester.git
 [submodule "post/privesc/linux/linuxprivchecker"]
 	path = post/privesc/linux/linuxprivchecker
@@ -119,11 +119,26 @@
 	path = post/privesc/repos/Privilege-Escalation
 	url = https://github.com/AusJock/Privilege-Escalation.git
 [submodule "misc_exploits/AutoBlue-MS17-010"]
-	path = misc_exploits/AutoBlue-MS17-010
+	path = misc_exploits/smb/AutoBlue-MS17-010
 	url = https://github.com/3ndG4me/AutoBlue-MS17-010.git
 [submodule "misc_exploits/MS17-010"]
-	path = misc_exploits/MS17-010
+	path = misc_exploits/smb/MS17-010
 	url = https://github.com/worawit/MS17-010.git
 [submodule "post/privesc/windows/WindowsExploits"]
 	path = post/privesc/windows/WindowsExploits
 	url = https://github.com/abatchy17/WindowsExploits.git
+[submodule "pre/doublepulsar-detection-script"]
+	path = pre/doublepulsar-detection-script
+	url = https://github.com/countercept/doublepulsar-detection-script.git
+[submodule "post/privesc/scanner/windows/Powerless"]
+	path = post/privesc/scanner/windows/Powerless
+	url = https://github.com/M4ximuss/Powerless.git
+[submodule "post/privesc/linux/pspy"]
+	path = post/privesc/linux/pspy
+	url = https://github.com/DominicBreuker/pspy.git
+[submodule "misc_exploits/smb/Eternal-Blue"]
+	path = misc_exploits/smb/Eternal-Blue
+	url = https://github.com/REPTILEHAUS/Eternal-Blue.git
+[submodule "helpers/exe2hex"]
+	path = helpers/exe2hex
+	url = https://github.com/g0tmi1k/exe2hex.git

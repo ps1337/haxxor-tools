@@ -70,6 +70,65 @@ smbclient -L //<IP>
 
 Check [this](https://nets.ec/Coldfusion_hacking).
 
+## Sensitive Windows Files
+
+```
+%windir%\repair\sam
+%windir%\System32\config\RegBack\SAM
+%windir%\repair\system
+%windir%\repair\software
+%windir%\repair\security
+%windir%\debug\NetSetup.log (AD domain name, DC name, internal IP, DA account)
+%windir%\iis6.log (5,6 or 7)
+%windir%\system32\logfiles\httperr\httperr1.log
+C:\sysprep.inf
+C:\sysprep\sysprep.inf
+C:\sysprep\sysprep.xml
+%windir%\Panther\Unattended.xml
+C:\inetpub\wwwroot\Web.config
+%windir%\system32\config\AppEvent.Evt (Application log)
+%windir%\system32\config\SecEvent.Evt (Security log)
+%windir%\system32\config\default.sav
+%windir%\system32\config\security.sav
+%windir%\system32\config\software.sav
+%windir%\system32\config\system.sav
+%windir%\system32\inetsrv\config\applicationHost.config
+%windir%\system32\inetsrv\config\schema\ASPNET_schema.xml
+%windir%\System32\drivers\etc\hosts (dns entries)
+%windir%\System32\drivers\etc\networks (network settings)
+%windir%\system32\config\SAM (only really useful if you have access to the files while the machine is off)
+```
+
+## DNS
+
+### Zone Transfer
+
+```
+host -t axfr <domain> <dns server ip>
+dig axfr @10.10.10.123 # For root zone
+dig axfr friendzoneportal.red @10.10.10.123 # For specific zone
+```
+
+### Enumeration
+
+#### NSLookup
+
+```
+nslookup <<< INPUT
+SERVER 10.10.10.123
+127.0.0.1
+10.10.10.123
+INPUT
+```
+
+#### DNSRecon
+
+```
+dnsrecon -r 127.0.0.0/24 -n 10.10.10.123
+dnsrecon -r 127.0.1.0/24 -n 10.10.10.123
+dnsrecon -r 10.10.10.0/24 -n 10.10.10.123
+```
+
 ## Resources
 
 [Penetration Testing Tools Cheat Sheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
