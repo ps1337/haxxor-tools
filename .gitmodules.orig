@@ -127,3 +127,24 @@
 [submodule "post/privesc/windows/WindowsExploits"]
 	path = post/privesc/windows/WindowsExploits
 	url = https://github.com/abatchy17/WindowsExploits.git
+<<<<<<< HEAD
+[submodule "pre/doublepulsar-detection-script"]
+	path = pre/doublepulsar-detection-script
+	url = https://github.com/countercept/doublepulsar-detection-script.git
+[submodule "post/privesc/scanner/windows/Powerless"]
+	path = post/privesc/scanner/windows/Powerless
+	url = https://github.com/M4ximuss/Powerless.git
+[submodule "post/privesc/linux/pspy"]
+	path = post/privesc/linux/pspy
+	url = https://github.com/DominicBreuker/pspy.git
+[submodule "misc_exploits/smb/Eternal-Blue"]
+	path = misc_exploits/smb/Eternal-Blue
+	url = https://github.com/REPTILEHAUS/Eternal-Blue.git
+[submodule "helpers/exe2hex"]
+	path = helpers/exe2hex
+	url = https://github.com/g0tmi1k/exe2hex.git
+=======
+[submodule "post/database/lib_mysqludf_sys"]
+	path = post/database/lib_mysqludf_sys
+	url = https://github.com/mysqludf/lib_mysqludf_sys.git
+>>>>>>> c00a04dc27cc28a24b11a874f7f33013bdff288f
