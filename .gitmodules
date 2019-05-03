@@ -127,3 +127,6 @@
 [submodule "post/privesc/windows/WindowsExploits"]
 	path = post/privesc/windows/WindowsExploits
 	url = https://github.com/abatchy17/WindowsExploits.git
+[submodule "post/database/oracle/odat"]
+	path = post/database/oracle/odat
+	url = https://github.com/quentinhardy/odat.git

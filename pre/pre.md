@@ -1,5 +1,29 @@
 # Information Gathering Cheatsheet
 
+## Unknown Services
+
+```
+amap -d <IP> <Port>
+```
+
+## HTTP
+
+
+### DAV
+
+```
+davtest -url <URL>
+cadaver <URL>
+```
+
+### HTTP Options
+
+Especially helpful in case of open directory listings - maybe PUT is possible
+
+```
+curl -i -X OPTIONS <URL>/dir
+```
+
 ## SMB
 
 ### Common Tools and Commands

